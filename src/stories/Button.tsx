@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { ButtonRoot } from './Button.styles'
 import type { ButtonProps } from './Button.types'
 
 export const Button = (props: ButtonProps) => {
@@ -8,8 +9,8 @@ export const Button = (props: ButtonProps) => {
     } = props
 
     return (
-        <button {...other}>
+        <ButtonRoot {...other}>
             Hi
-        </button>
+        </ButtonRoot>
     )
 }

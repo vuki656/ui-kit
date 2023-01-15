@@ -1,0 +1,5 @@
+@layer ui-kit {
+    .active {
+        color: red;
+    }
+}

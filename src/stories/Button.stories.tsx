@@ -1,14 +1,24 @@
-import { Button } from "./Button"
-import { Meta, Story } from '@storybook/react'
-import React from "react"
+import type {
+    ComponentMeta,
+    ComponentStory,
+} from '@storybook/react'
+import React from 'react'
 
-const config: Meta = {
+import { Button } from './Button'
+
+const config: ComponentMeta<typeof Button> = {
+    argTypes: {
+        active: {
+            defaultValue: false,
+            type: 'boolean',
+        },
+    },
     component: Button,
 }
 
-const ButtonStory: Story = () => {
+const ButtonStory: ComponentStory<typeof Button> = (props) => {
     return (
-        <Button>
+        <Button {...props}>
             Hm
         </Button>
     )
