@@ -6,13 +6,9 @@ import React from 'react'
 
 import { Button } from './Button'
 
-// TODO: defaultTypes deprecated https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#no-longer-inferring-default-values-of-args
 const config: ComponentMeta<typeof Button> = {
-    argTypes: {
-        active: {
-            defaultValue: false,
-            type: 'boolean',
-        },
+    args: {
+        active: false
     },
     component: Button,
 }
