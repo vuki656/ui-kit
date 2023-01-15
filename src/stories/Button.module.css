@@ -1,4 +1,15 @@
 @layer ui-kit {
+    .base {
+        color: white;
+        background-color: #228be6;
+        border: none;
+        border-radius: 4px;
+        padding: 0px 18px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        height: 36px;
+    }
     .active {
         color: red;
     }
