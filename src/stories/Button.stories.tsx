@@ -1,7 +1,18 @@
 import { Button } from "./Button"
+import { Meta, Story } from '@storybook/react'
+import React from "react"
 
-export default {
+const config: Meta = {
     component: Button,
 }
 
-export const Default = Button
+const ButtonStory: Story = () => {
+    return (
+        <Button>
+            Hm
+        </Button>
+    )
+}
+
+export const Default = ButtonStory
+export default config

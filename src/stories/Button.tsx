@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react'
 
-import { ButtonProps } from './Button.types'
+import type { ButtonProps } from './Button.types'
 
 export const Button = (props: ButtonProps) => {
     const {
@@ -8,10 +8,7 @@ export const Button = (props: ButtonProps) => {
     } = props
 
     return (
-        <button
-            {...other}
-            type="button"
-        >
+        <button {...other}>
             Hi
         </button>
     )
